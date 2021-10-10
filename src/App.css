@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
-.App {
-  text-align: center;
+*{
+  font-family: SFPro,Arial,Noto Sans JP,AppleSDGothicNeo,sans-serif;
 }
 
-.header-wrapper div{
-  display: inline-block;
+.App {
+  text-align: center;
 }
 
 .header-wrapper{
   display: flex;
   justify-content: space-between;
-  margin: 0 65px 0 30px;
+  margin: 0 30px;
   line-height: 75px;
   height: 75px;
 }
@@ -20,33 +20,99 @@
   margin: 2px 0 0 0 ;
 }
 
-.title{
+.nav-title{
   margin: -2px 0 0 26px;
 }
-.title a{
+
+.nav-title a{
   font-size: 16px;
   font-weight: 700;
   color: #1e1e1e;
   text-decoration: none;
-  font-family: SFPro,Arial,Noto Sans JP,AppleSDGothicNeo,sans-serif;
   margin: 0 80px 0 0  ;
   padding: 0 0 6px 0;
   border-bottom: 4px solid #1e1e1e;
 }
-.title a:last-child{
+.nav-title a:last-child{
   margin: 0;
 }
 
-.ball {
+.ball-wrapper{
   display: inline-block;
-  position: relative;
-  margin: 2px 0px 0 0 ;
+}
+.ball{
+  display: flex;
+  align-items: center;
+}
+.ball img{
+  margin: 0 7px 0 0 ;
 }
 
 .language{
   font-size: 14px;
   font-weight: 700;
-  position: absolute;
-  top: -5px;
-  left: 25px;
+  margin: -3px 0 0 0;
 }
+
+.banner-background{
+  height: 60vh;
+  background: url(./components/image/mv01.jpg)no-repeat;
+  background-position:center ;
+  background-size: cover;
+  background-attachment:fixed ;
+  text-align: left;
+  padding: 295px 0 0 142px ;
+}
+
+.banner-title-wrapper{
+  width: 837px;
+}
+
+.banner-title-wrapper h2{
+  font-size: 140px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 5px;
+}
+
+.banner-title-wrapper h3{
+  font-size: 40px;
+  text-indent: 8px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  position: relative;
+}
+
+.download-icon-title{
+  display: flex;
+  align-items: center;
+  margin: 53px 0 0 8px;
+}
+
+.download-icon-title p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  margin: -6px 0 0 8px;
+}
+.download-wrapper{
+  display: flex;
+  margin:11px 0 0 8px;
+}
+.download-icon{
+  font-size: 20px;
+  height: 58px;
+  width: 58px;
+  line-height: 58px;
+  text-align: center;
+  border: 1px solid #eee;
+  color: #fff;
+  border-radius: 4px;
+  margin: 0 4px 0 0;
+}
+.download-icon:first-child{
+  font-size: 24px;
+}
+
+
