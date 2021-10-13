@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@font-face{
+  font-family:LINESeed;
+  src:url(./components/LINESeed_W_XBd-7d940d31ff60f5953c6d93ec102bcac8.woff) ;
+  font-weight: 700;
+	font-style: normal;
+}
 
 *{
   font-family: SFPro,Arial,Noto Sans JP,AppleSDGothicNeo,sans-serif;
@@ -6,14 +12,19 @@
 
 .App {
   text-align: center;
+  box-sizing: border-box;
+}
+
+h2{
+  font-family: 'LINESeed';
 }
 
 .header-wrapper{
   display: flex;
   justify-content: space-between;
-  margin: 0 30px;
+  margin: 1px 30px 0;
   line-height: 75px;
-  height: 75px;
+  height: 74px;
 }
 
 .logo{
@@ -45,34 +56,35 @@
   align-items: center;
 }
 .ball img{
-  margin: 0 7px 0 0 ;
+  margin: -2px 5px 0 0 ;
 }
 
 .language{
   font-size: 14px;
   font-weight: 700;
-  margin: -3px 0 0 0;
+  margin: -3px -1px 0 0;
+  font-family: 'LINESeed';
 }
 
 .banner-background{
-  height: 60vh;
+  height: 63vh;
   background: url(./components/image/mv01.jpg)no-repeat;
   background-position:center ;
   background-size: cover;
   background-attachment:fixed ;
   text-align: left;
-  padding: 295px 0 0 142px ;
+  padding: 277px 0 0 142px ;
 }
 
 .banner-title-wrapper{
-  width: 837px;
+  display: inline-block;
 }
 
 .banner-title-wrapper h2{
   font-size: 140px;
   font-weight: 700;
   color: #fff;
-  margin: 0 0 5px;
+  margin: 0 ;
 }
 
 .banner-title-wrapper h3{
@@ -115,4 +127,145 @@
   font-size: 24px;
 }
 
+.main-title-area h2{
+  color: #1e1e1e;
+  font-size: 70px;
+  margin: 60px 0 0 20px;
+}
+.main-title-area p{
+  color: #616161;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 115px;
+}
 
+.ServiceBox-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0;
+}
+.ServiceBox-content-wrapper{
+  border-right: 1px dashed #b2b2b2;
+  position: relative;
+}
+.ServiceBox-content{
+  width: 480px;
+  padding: 173px 0px 173px 40px;
+  box-sizing: content-box;
+  margin: 0 78px 0 1px;
+  text-align: left;
+}
+.ServiceBox-content img{
+  border: .5px solid rgba(0,0,0,.1);
+  border-radius: 16px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  margin: 0 0 20px -1px;
+}
+.ServiceBox-content h3{
+  margin: 0 0 20px 0 ;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #1e1e1e;
+}
+.ServiceBox-content h4{
+  color: #07b53b;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.08px;
+  margin: 0 0 8px 0;
+}
+.ServiceBox-content p{
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.6px;
+  margin: 0 0 67px 0;
+}
+.ServiceBox-content a{
+  background: #fff;
+  padding: 0 24px;
+  width: 161px;
+  font-size: 14px;
+  color: #1e1e1e;
+  font-weight: 500;
+  box-sizing: border-box;
+  height: 60px;
+  letter-spacing: -0.3px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,.15);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.external{
+  font-size: 20px;
+  margin: 0 8px 0 0;
+}
+.ServiceBox-rightImg{
+  width: 600px;
+  padding: 83px 0;
+  position: relative;
+  left: -151px;
+}
+
+.left-border{
+  border: 0;
+  border-left: 1px dashed #b2b2b2;
+}
+
+.ServiceBox-leftImg{
+  width: 600px;
+  padding: 83px 0;
+  position: relative;
+  left: -130px;
+}
+
+.ServiceBox-content2{
+  padding: 317px 40px 317px 80px;
+  margin: 0;
+}
+.ServiceBox-content .download-icon{
+  color: #000;
+  border: 1px solid rgba(0,0,0,.15);
+}
+.point{
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgba(30,30,30,.3);
+  border-radius: 8px;
+  background: #fff;
+}
+.big-point-wrapper{
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(30,30,30,0.3);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -19px;
+  right: -11px;
+}
+.big-point{
+  width: 2px;
+  height: 2px;
+  border: 1px solid rgba(30,30,30,.3);
+  border-radius: 8px;
+  background: rgba(30,30,30,.3);
+}
+.right-border .point{
+  position: absolute;
+  top: 0px;
+  right: -6px;
+}
+.left-border .point{
+  position: absolute;
+  top: 0px;
+  left: -6px;
+}
