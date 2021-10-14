@@ -10,6 +10,10 @@
   font-family: SFPro,Arial,Noto Sans JP,AppleSDGothicNeo,sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
   box-sizing: border-box;
@@ -320,4 +324,19 @@ h2{
   color: #616161;
   width: 320px;
   margin: 0 20px;
+}
+
+.corporate-wrapper{
+  background: url(./components/image/e8ed41f32061a4f1dc1dc2778a1412a3.png)no-repeat;
+  height: 320px;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.corporate-wrapper h1{
+  font-size: 46px;
+  font-weight: 700;
+  color: #fff;
 }
