@@ -14,6 +14,13 @@ import box2 from './image/430cf150689adf84a25056883eafa478.png'
 import box3 from './image/bc243f40962aaf29468d0c9a09f22381.png'
 import box4 from './image/f0d37054c0f8489d70c301789bd0cdf9.png'
 import box5 from './image/d5794d4710b165c3cc314cae3d1852eb.png'
+import content1 from './image/27da407cd76c1fb74defda298a9770ed.png'
+import content2 from './image/6ddfd243e2ba708e8e40f54d0d823afd.png'
+import content3 from './image/e864d7cafc71dc3cf840395cf51aea92.png'
+import content4 from './image/d4a6b69c5e35f373ed00fe8cc861e36b.png'
+import content5 from './image/24ccdce211e893e7e9d7b2c6fd5bc6ec.png'
+import content6 from './image/86b09587299fad3493664e5182d131f4.png'
+
 
 
 
@@ -160,6 +167,44 @@ function Line() {
           </div>
         </div>
 
+      </div>
+      <div className='communication-wrapper'>
+        <div className='communication-title-wrapper'>
+          <h1>通訊軟體</h1>
+          <p>一款全新型態的通訊軟體，讓您隨時隨地享受免費傳訊、免費通話等溝通樂趣。</p>
+        </div>
+        <div className='communication-content-wrapper'>
+          <div className='communication-content'>
+            <img src={content1} alt='損壞'/>
+            <h2>聊天、語音通話&視訊通話</h2>
+            <p>能夠和好友一對一或多人群組訊息聊天，或是進行語音、視訊通話。</p>
+          </div>
+          <div className='communication-content'>
+            <img src={content2} alt='損壞'/>
+            <h2>貼圖＆表情貼＆主題</h2>
+            <p>使用有趣的貼圖或表情貼豐富聊天，也能更換超讚的主題來表達自己。</p>
+          </div>
+          <div className='communication-content'>
+            <img src={content3} alt='損壞'/>
+            <h2>主頁</h2>
+            <p>可以快速連結 LINE 的各種服務，包含貼圖等多樣的內容資訊。</p>
+          </div>
+          <div className='communication-content down'>
+            <img src={content4} alt='損壞'/>
+            <h2>社群</h2>
+            <p>輕鬆分享共同興趣、開心聊出好麻吉。</p>
+          </div>
+          <div className='communication-content down'>
+            <img src={content5} alt='損壞'/>
+            <h2>貼文串</h2>
+            <p>供你分享你的近況，或是瞭解好友的最新消息。透過「探索」功能，能找到更多你喜愛的內容。</p>
+          </div>
+          <div className='communication-content down'>
+            <img src={content6} alt='損壞'/>
+            <h2>錢包</h2>
+            <p>使用「 LINE Pay 」可以進行安全方便的行動付款或轉帳，也能使用其他金融相關服務。</p>
+          </div>
+        </div>
       </div>
     </main>
     </>
