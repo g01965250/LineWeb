@@ -2,7 +2,7 @@ import LineLogo from './image/icon-title-pc.png';
 import LangIcon from './image/icon-lang-b.png';
 import SmLineLogo from './image/icon-line-w.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faApple ,faGooglePlay} from '@fortawesome/free-brands-svg-icons'
+import { faApple ,faFacebook,faGooglePlay , faWindows, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import { faDesktop , faExternalLinkAlt ,faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 import service1 from './image/589f44e9813cc8afde9c579e35ecdd15.png'
 import service2 from './image/60d56b7ce075c8ec2e60dda4368aeb4e.png'
@@ -70,6 +70,8 @@ import product47 from './image/product47.png'
 import product48 from './image/product48.png'
 import product49 from './image/product49.png'
 import product50 from './image/product50.png'
+import IconLine from './image/icon-line.png'
+
 
 
 
@@ -584,6 +586,35 @@ function Line() {
         </div>
       </div>
     </main>
+    <footer>
+      <div className='footer-wrapper'>
+        <ul>
+          <li><img src={IconLine} alt='損壞'/></li>
+          <a href='#'><li><FontAwesomeIcon icon={faApple} className='icon apple'/>App Store</li></a>
+          <a href='#'><li><FontAwesomeIcon icon={faGooglePlay} className='icon google' />Google Play</li></a>
+          <a href='#'><li><FontAwesomeIcon icon={faDesktop} className='icon desktop' />Desktop</li></a>
+          <a href='#'><li><FontAwesomeIcon icon={faWindows} className='icon windows' />Windows Store</li></a>
+          <a href='#'><li>Chrome</li></a>
+          <a href='#'><li>APK</li></a>
+          <a href='#'><li>Screen Saver</li></a>
+        </ul>
+        <div className='footerOther'>
+          <ul className='LastUl'>
+            <li className='FirstLi'>© LINE Corporation</li>
+            <a href='#'><li>常見問題</li></a>
+            <a href='#'><li>服務條款</li></a>
+            <a href='#'><li>隱私權政策</li></a>
+            <a href='#'><li>註冊及移動帳號</li></a>
+          </ul>
+          <div className='other'>Family sites -</div>
+          <div className='icon-wrapper'>
+            <a href='#'><FontAwesomeIcon icon={faYoutube} /></a>
+            <a href='#'><FontAwesomeIcon icon={faFacebook} /></a>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
     </>
   )
 
