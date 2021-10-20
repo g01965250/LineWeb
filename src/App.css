@@ -23,6 +23,17 @@ h2{
   font-family: 'LINESeed';
 }
 
+header{
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  opacity: .95;
+  background: #fff;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+  animation: startHeader 2.5s;
+  z-index: 1;
+}
+
 .header-wrapper{
   display: flex;
   justify-content: space-between;
@@ -343,6 +354,7 @@ h2{
 
 .all-product-title{
   padding: 180px 0 0 ;
+  margin-bottom: 60px;
 }
 .all-product-title h1{
   font-size: 60px;
