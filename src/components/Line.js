@@ -3,7 +3,7 @@ import LangIcon from './image/icon-lang-b.png';
 import SmLineLogo from './image/icon-line-w.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faApple ,faFacebook,faGooglePlay , faWindows, faYoutube} from '@fortawesome/free-brands-svg-icons'
-import { faDesktop , faExternalLinkAlt ,faEllipsisH } from '@fortawesome/free-solid-svg-icons'
+import { faDesktop , faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import service1 from './image/589f44e9813cc8afde9c579e35ecdd15.png'
 import service2 from './image/60d56b7ce075c8ec2e60dda4368aeb4e.png'
 import service3 from './image/1648c03d05930f6ac2ff5b7112d1b6b0.png'
@@ -71,8 +71,8 @@ import product48 from './image/product48.png'
 import product49 from './image/product49.png'
 import product50 from './image/product50.png'
 import IconLine from './image/icon-line.png'
-
-
+import Communication from './Communication';
+import ProductBox from './ProductBox';
 
 
 
@@ -226,36 +226,36 @@ function Line() {
           <p>一款全新型態的通訊軟體，讓您隨時隨地享受免費傳訊、免費通話等溝通樂趣。</p>
         </div>
         <div className='communication-content-wrapper'>
-          <div className='communication-content'>
-            <img src={content1} alt='損壞'/>
-            <h2>聊天、語音通話&視訊通話</h2>
-            <p>能夠和好友一對一或多人群組訊息聊天，或是進行語音、視訊通話。</p>
-          </div>
-          <div className='communication-content'>
-            <img src={content2} alt='損壞'/>
-            <h2>貼圖＆表情貼＆主題</h2>
-            <p>使用有趣的貼圖或表情貼豐富聊天，也能更換超讚的主題來表達自己。</p>
-          </div>
-          <div className='communication-content'>
-            <img src={content3} alt='損壞'/>
-            <h2>主頁</h2>
-            <p>可以快速連結 LINE 的各種服務，包含貼圖等多樣的內容資訊。</p>
-          </div>
-          <div className='communication-content down'>
-            <img src={content4} alt='損壞'/>
-            <h2>社群</h2>
-            <p>輕鬆分享共同興趣、開心聊出好麻吉。</p>
-          </div>
-          <div className='communication-content down'>
-            <img src={content5} alt='損壞'/>
-            <h2>貼文串</h2>
-            <p>供你分享你的近況，或是瞭解好友的最新消息。透過「探索」功能，能找到更多你喜愛的內容。</p>
-          </div>
-          <div className='communication-content down'>
-            <img src={content6} alt='損壞'/>
-            <h2>錢包</h2>
-            <p>使用「 LINE Pay 」可以進行安全方便的行動付款或轉帳，也能使用其他金融相關服務。</p>
-          </div>
+          <Communication
+            img={content1}
+            title='聊天、語音通話&視訊通話'
+            content='能夠和好友一對一或多人群組訊息聊天，或是進行語音、視訊通話。'
+          />
+          <Communication
+            img={content2}
+            title='貼圖＆表情貼＆主題'
+            content='使用有趣的貼圖或表情貼豐富聊天，也能更換超讚的主題來表達自己。'
+          />
+          <Communication
+            img={content3}
+            title='主頁'
+            content='可以快速連結 LINE 的各種服務，包含貼圖等多樣的內容資訊。'
+          />
+          <Communication
+            img={content4}
+            title='社群'
+            content='輕鬆分享共同興趣、開心聊出好麻吉。'
+          />
+          <Communication
+            img={content5}
+            title='貼文串'
+            content='供你分享你的近況，或是瞭解好友的最新消息。透過「探索」功能，能找到更多你喜愛的內容。'
+          />
+          <Communication
+            img={content6}
+            title='錢包'
+            content='使用「 LINE Pay 」可以進行安全方便的行動付款或轉帳，也能使用其他金融相關服務。'
+          />
         </div>
       </div>
       <a className='corporate-banner' href='#'>
@@ -282,508 +282,258 @@ function Line() {
             <li><button>Games</button></li>
           </ul>
           <div className='product-box-wrapper'>
-            <div className='product-box'>
-              <img src={product1} alt='損壞'/>
-              <h3>LINE Messenger</h3>
-              <p>拉近人與人、人與資訊及應用服務間的距離的通訊軟體</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product2} alt='損壞'/>
-              <h3>LINE STORE</h3>
-              <p>可購買 LINE 貼圖、主題或遊戲中貨幣的官方線上商店</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product3} alt='損壞'/>
-              <h3>LINE貼文串</h3>
-              <p>探索樂趣，分享生活</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product4} alt='損壞'/>
-              <h3>LINE Antivirus</h3>
-              <p>在「LINE Antivirus」執行幾個簡單的步驟， 就能保護智慧手機上個人資訊的安全， 並可免於病毒或惡意程式的侵害。(限Android版本)</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product5} alt='損壞'/>
-              <h3>LINE社群</h3>
-              <p>輕鬆分享共同興趣、開心聊出好麻吉。</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product6} alt='損壞'/>
-              <h3>LINE TV</h3>
-              <p>共享追劇生活</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product7} alt='損壞'/>
-              <h3>LINE GAME</h3>
-              <p>PLAYTIME ANYTIME！ 隨時隨地和朋友一起玩！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product8} alt='損壞'/>
-              <h3>LINE POD	</h3>
-              <p>全新 PC 遊戲平台，用 LINE 帳號暢玩各種線上遊戲！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product9} alt='損壞'/>
-              <h3>LINE MUSIC</h3>
-              <p>全方位音樂服務，不只聽音樂、換鈴聲，還能練唱！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product10} alt='損壞'/>
-              <h3>LINE WEBTOON 每日漫畫</h3>
-              <p>台灣最大漫畫平台，風靡全世界的熱門漫畫每日更新中，追了才酷，一看就停不下來！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product11} alt='損壞'/>
-              <h3>LINE旅遊</h3>
-              <p>排行程、找景點、機票住宿比價，一站俱全！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product12} alt='損壞'/>
-              <h3>LINE熱點</h3>
-              <p>查找店家和優惠，串連生活便利工具的小幫手</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product13} alt='損壞'/>
-              <h3>LINE TAXI	</h3>
-              <p>用科技改變你的交通方式,無需下載 App，用 LINE 即可預約計程車的叫車服務</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product14} alt='損壞'/>
-              <h3>LINE購物</h3>
-              <p>先LINE購物再購物</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product15} alt='損壞'/>
-              <h3>LINE禮物</h3>
-              <p>即時禮到心裡</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product16} alt='損壞'/>
-              <h3>LINE口袋商店</h3>
-              <p>LINE 官方嚴選，精選好物打造好感生活</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product17} alt='損壞'/>
-              <h3>LINE FRIENDS</h3>
-              <p>LINE FRIENDS是創意IP工作室，創作出溫暖可愛的「BROWN & FRIENDS」以及風行世界的「BT21」。旗下兩大IP衍生內容包含動畫、遊戲，並與世界各地知名品牌聯名合作。</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product18} alt='損壞'/>
-              <h3>LINE拍貼-Creators Studio</h3>
-              <p>用智慧手機就能輕鬆製作！快來自製專屬貼圖♪</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product19} alt='損壞'/>
-              <h3>LINE訊息查證</h3>
-              <p>LINE 官方訊息查證，先查證再轉傳，杜絕假訊息！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product20} alt='損壞'/>
-              <h3>LINE Pay</h3>
-              <p>付款、轉帳、生活繳費，輕鬆簡單又便利！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product21} alt='損壞'/>
-              <h3>LINE Bank</h3>
-              <p>Banking In Your Hand.</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product22} alt='損壞'/>
-              <h3>LINE新星計畫</h3>
-              <p>邀請您一同加入成為LINE「智慧入口」的一份子，開啟瞬聯時代，您的獨特創意將透過LINE服務到每一位使用者，創造更美好的生活！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product23} alt='損壞'/>
-              <h3>LINE官方帳號</h3>
-              <p>輕鬆貼近好友，經營良好關係</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product24} alt='損壞'/>
-              <h3>LINE POINTS</h3>
-              <p>完成任務快速集點！利用超夯點數，提升活動參與度</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product25} alt='損壞'/>
-              <h3>LINE Beacon</h3>
-              <p>主動導客，再創回流</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product26} alt='損壞'/>
-              <h3>LINE 樂兌</h3>
-              <p>更聰明效率的派樣形式</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product27} alt='損壞'/>
-              <h3>LINE TODAY</h3>
-              <p>隨點隨看 生活快充</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product28} alt='損壞'/>
-              <h3>LINE HUB</h3>
-              <p>LINE服務的入口，新聞、影劇、購物、旅遊、貼圖、漫畫等豐富多樣的內容，等您來發掘！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product29} alt='損壞'/>
-              <h3>B612</h3>
-              <p>每天讓你開心的相機</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product30} alt='損壞'/>
-              <h3>LOOKS</h3>
-              <p>美妝自拍相機</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product31} alt='損壞'/>
-              <h3>LINE Camera</h3>
-              <p>修圖、調色、裝飾樣樣行，照片編輯利器！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product32} alt='損壞'/>
-              <h3>Foodie	</h3>
-              <p>使用各種濾鏡修圖</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product33} alt='損壞'/>
-              <h3>Tsum Tsum Stadium</h3>
-              <p>Tsum Tsum 系列競賽益智手遊來囉！ 挑戰 50 人即時對戰，和全球玩家一較高下！搭配你的專屬 Tsum 造型上場吧！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product34} alt='損壞'/>
-              <h3>LINE：哆啦A夢樂園</h3>
-              <p>一起來玩由各種祕密道具組成的三消遊戲！來和哆啦A夢的角色們一起冒險吧！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product35} alt='損壞'/>
-              <h3>LINE 貓咪咖啡廳</h3>
-              <p>愛貓者的天堂！與可愛的貓咪們一起放鬆一起遊戲吧！打造獨一無二的風格成為最受矚目的咖啡廳！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product36} alt='損壞'/>
-              <h3>LINE HELLO BT21</h3>
-              <p>HELLO BT21，LINE Bubble 系列的最新遊戲！BT21 的角色們都在益智遊戲內！與可愛的 BT21 角色合作，拯救長滿巨大蒲公英的世界吧！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product37} alt='損壞'/>
-              <h3>JUMPUTI HEROES 英雄氣泡</h3>
-              <p>日本 JUMP 超人氣動漫角色大集結！簡單爽快的氣泡消珠戰鬥，單人出擊或與好友聯手擊敗敵人吧！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product38} alt='損壞'/>
-              <h3>LINE 熊大上菜</h3>
-              <p>跟著熊大主廚一起前往料理的頂級世界吧！各式各樣的料理等你來挑戰！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product39} alt='損壞'/>
-              <h3>LINE：鋼彈大亂鬥</h3>
-              <p>全新體驗的鋼彈遊戲登場！ 操作簡單且含有大量深度挑戰要素！快來挑戰全新型態的突擊戰鬥遊戲！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product40} alt='損壞'/>
-              <h3>LINE 熊大農場</h3>
-              <p>超人氣LINE卡通明星「熊大」開始經營農場了！？ 快來跟大夥們歡樂打造屬於自己的農場！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product41} alt='損壞'/>
-              <h3>LINE：ONE PIECE 秘寶尋航</h3>
-              <p>親身體驗 ONE PIECE 的世界！ 熱血刺激的 RPG 點擊戰鬥，重新感受航海王經典時刻！ 快來用超強必殺技擊退敵人吧！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product42} alt='損壞'/>
-              <h3>LINE Bubble 2</h3>
-              <p>為了尋找熊大，兔兔跟火龍尼可展開了全新冒險。 豐富又有趣的關卡，快來加入超好玩的消泡泡冒險之旅吧！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product43} alt='損壞'/>
-              <h3>LINE 熊貓連連看</h3>
-              <p>輕鬆上手！超上癮的經典消除玩法，與熊貓 Tan Tan 和他的好朋友一起踏上精彩的冒險旅程！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product44} alt='損壞'/>
-              <h3>LINE PokoPoko 決戰波兔森林</h3>
-              <p>只需要湊齊並消除方塊就能享受有趣又刺激的益智遊戲樂趣，和兔子 POKOTA 一起來收集幸運草及櫻桃、挑戰各種關卡吧！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product45} alt='損壞'/>
-              <h3>LINE Rangers</h3>
-              <p>簡單暢快正統塔防 RPG 遊戲！為了拯救被外星人軍團綁架的莎莉，和熊大、兔兔、饅頭人等 LINE 卡通明星夥伴們一起成為銀河特攻隊，並肩戰鬥吧！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product46} alt='損壞'/>
-              <h3>LINE：Disney Tsum Tsum</h3>
-              <p>最可愛的迪士尼毛絨公仔消除遊戲，輕鬆串連就能贏得高分！超多超萌Tsum Tsum等你來蒐集！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product47} alt='損壞'/>
-              <h3>LINE Pokopang</h3>
-              <p>透過一筆畫的方式將相同顏色的方塊連在一起即可得分，還可透過提高等級、提升攻擊力來加速得分腳步，快來和粉紅兔子POKOTA及可愛角色們合力打倒怪物吧！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product48} alt='損壞'/>
-              <h3>LINE PLAY 我們的祕密世界</h3>
-              <p>【全世界玩家達7,000萬人】 在遊戲中做自己！創造出自己專屬的虛擬人偶，來跟全世界的朋友們同樂吧～</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product49} alt='損壞'/>
-              <h3>LINE 波兔小鎮</h3>
-              <p>只要點擊就能消除可愛造型方塊的超爽快益智遊戲！</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-            <div className='product-box'>
-              <img src={product50} alt='損壞'/>
-              <h3>LINE 動物大富豪</h3>
-              <p>撲克牌玩法再進化! 駕馭規則不受限!</p>
-              <FontAwesomeIcon icon={faEllipsisH} className='ellipsish'/>
-              <div className='product-box-hover'>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-apple' icon={faApple}/>App Store</div></a>
-                <a href='#'><div><FontAwesomeIcon className='product-box-icon-google' icon={faGooglePlay}/>Google Play</div></a>
-              </div>
-            </div>
-          </div>
+            <ProductBox
+              img={product1}
+              title='LINE Messenger'
+              content='拉近人與人、人與資訊及應用服務間的距離的通訊軟體'
+            />
+            <ProductBox
+              img={product2}
+              title='LINE STORE'
+              content='可購買 LINE 貼圖、主題或遊戲中貨幣的官方線上商店'
+            />
+            <ProductBox
+              img={product3}
+              title='LINE貼文串'
+              content='探索樂趣，分享生活'
+            />
+            <ProductBox
+              img={product4}
+              title='LINE Antivirus'
+              content='在「LINE Antivirus」執行幾個簡單的步驟， 就能保護智慧手機上個人資訊的安全， 並可免於病毒或惡意程式的侵害。(限Android版本)'
+            />
+            <ProductBox
+              img={product5}
+              title='LINE社群'
+              content='輕鬆分享共同興趣、開心聊出好麻吉。'
+            />
+            <ProductBox
+              img={product6}
+              title='LINE TV'
+              content='共享追劇生活'
+            />
+            <ProductBox
+              img={product7}
+              title='LINE GAME'
+              content='LAYTIME ANYTIME！ 隨時隨地和朋友一起玩！'
+            />
+            <ProductBox
+              img={product8}
+              title='LINE POD	'
+              content='全新 PC 遊戲平台，用 LINE 帳號暢玩各種線上遊戲！'
+            />
+            <ProductBox
+              img={product9}
+              title='LINE MUSIC'
+              content='全方位音樂服務，不只聽音樂、換鈴聲，還能練唱！'
+            />
+            <ProductBox
+              img={product10}
+              title='LINE WEBTOON 每日漫畫'
+              content='台灣最大漫畫平台，風靡全世界的熱門漫畫每日更新中，追了才酷，一看就停不下來！'
+            />
+            <ProductBox
+              img={product11}
+              title='LINE旅遊'
+              content='排行程、找景點、機票住宿比價，一站俱全！'
+            />
+            <ProductBox
+              img={product12}
+              title='LINE熱點'
+              content='查找店家和優惠，串連生活便利工具的小幫手'
+            />
+            <ProductBox
+              img={product13}
+              title='LINE TAXI	'
+              content='用科技改變你的交通方式,無需下載 App，用 LINE 即可預約計程車的叫車服務'
+            />
+            <ProductBox
+              img={product14}
+              title='LINE購物'
+              content='先LINE購物再購物'
+            />
+            <ProductBox
+              img={product15}
+              title='LINE禮物'
+              content='即時禮到心裡'
+            />
+            <ProductBox
+              img={product16}
+              title='LINE口袋商店'
+              content='INE 官方嚴選，精選好物打造好感生活'
+            />
+            <ProductBox
+              img={product17}
+              title='LINE FRIENDS'
+              content='INE FRIENDS是創意IP工作室，創作出溫暖可愛的「BROWN & FRIENDS」以及風行世界的「BT21」。旗下兩大IP衍生內容包含動畫、遊戲，並與世界各地知名品牌聯名合作。'
+            />
+            <ProductBox
+              img={product18}
+              title='LINE拍貼-Creators Studio'
+              content='用智慧手機就能輕鬆製作！快來自製專屬貼圖♪'
+            />
+            <ProductBox
+              img={product19}
+              title='LINE訊息查證'
+              content='INE 官方訊息查證，先查證再轉傳，杜絕假訊息！'
+            />
+            <ProductBox
+              img={product20}
+              title='LINE Pay'
+              content='付款、轉帳、生活繳費，輕鬆簡單又便利！'
+            />
+            <ProductBox
+              img={product21}
+              title='LINE Bank'
+              content='anking In Your Hand.'
+            />
+            <ProductBox
+              img={product22}
+              title='LINE新星計畫'
+              content='邀請您一同加入成為LINE「智慧入口」的一份子，開啟瞬聯時代，您的獨特創意將透過LINE服務到每一位使用者，創造更美好的生活！'
+            />
+            <ProductBox
+              img={product23}
+              title='LINE官方帳號'
+              content='輕鬆貼近好友，經營良好關係'
+            />
+            <ProductBox
+              img={product24}
+              title='LINE POINTS'
+              content='完成任務快速集點！利用超夯點數，提升活動參與度'
+            />
+            <ProductBox
+              img={product25}
+              title='LINE Beacon'
+              content='主動導客，再創回流'
+            />
+            <ProductBox
+              img={product26}
+              title='LINE 樂兌'
+              content='更聰明效率的派樣形式'
+            />
+            <ProductBox
+              img={product27}
+              title='LINE TODAY'
+              content='隨點隨看 生活快充'
+            />
+            <ProductBox
+              img={product28}
+              title='LINE HUB'
+              content='INE服務的入口，新聞、影劇、購物、旅遊、貼圖、漫畫等豐富多樣的內容，等您來發掘！'
+            />
+            <ProductBox
+              img={product29}
+              title='B612'
+              content='每天讓你開心的相機'
+            />
+            <ProductBox
+              img={product30}
+              title='LOOKS'
+              content='美妝自拍相機'
+            />
+            <ProductBox
+              img={product31}
+              title='LINE Camera'
+              content='修圖、調色、裝飾樣樣行，照片編輯利器！'
+            />
+            <ProductBox
+              img={product32}
+              title='Foodie	'
+              content='使用各種濾鏡修圖'
+            />
+            <ProductBox
+              img={product33}
+              title='Tsum Tsum Stadium'
+              content='sum Tsum 系列競賽益智手遊來囉！ 挑戰 50 人即時對戰，和全球玩家一較高下！搭配你的專屬 Tsum 造型上場吧！'
+            />
+            <ProductBox
+              img={product34}
+              title='LINE：哆啦A夢樂園'
+              content='一起來玩由各種祕密道具組成的三消遊戲！來和哆啦A夢的角色們一起冒險吧！'
+            />
+            <ProductBox
+              img={product35}
+              title='LINE 貓咪咖啡廳'
+              content='愛貓者的天堂！與可愛的貓咪們一起放鬆一起遊戲吧！打造獨一無二的風格成為最受矚目的咖啡廳！'
+            />
+            <ProductBox
+              img={product36}
+              title='LINE HELLO BT21'
+              content='ELLO BT21，LINE Bubble 系列的最新遊戲！BT21 的角色們都在益智遊戲內！與可愛的 BT21 角色合作，拯救長滿巨大蒲公英的世界吧！'
+            />
+            <ProductBox
+              img={product37}
+              title='JUMPUTI HEROES 英雄氣泡'
+              content='日本 JUMP 超人氣動漫角色大集結！簡單爽快的氣泡消珠戰鬥，單人出擊或與好友聯手擊敗敵人吧！'
+            />
+            <ProductBox
+              img={product38}
+              title='LINE 熊大上菜'
+              content='跟著熊大主廚一起前往料理的頂級世界吧！各式各樣的料理等你來挑戰！'
+            />
+            <ProductBox
+              img={product39}
+              title='LINE：鋼彈大亂鬥'
+              content='全新體驗的鋼彈遊戲登場！ 操作簡單且含有大量深度挑戰要素！快來挑戰全新型態的突擊戰鬥遊戲！'
+            />
+            <ProductBox
+              img={product40}
+              title='LINE 熊大農場'
+              content='超人氣LINE卡通明星「熊大」開始經營農場了！？ 快來跟大夥們歡樂打造屬於自己的農場！'
+            />
+            <ProductBox
+              img={product41}
+              title='LINE：ONE PIECE 秘寶尋航'
+              content='親身體驗 ONE PIECE 的世界！ 熱血刺激的 RPG 點擊戰鬥，重新感受航海王經典時刻！ 快來用超強必殺技擊退敵人吧！'
+            />
+            <ProductBox
+              img={product42}
+              title='LINE Bubble 2'
+              content='為了尋找熊大，兔兔跟火龍尼可展開了全新冒險。 豐富又有趣的關卡，快來加入超好玩的消泡泡冒險之旅吧！'
+            />
+            <ProductBox
+              img={product43}
+              title='LINE 熊貓連連看'
+              content='輕鬆上手！超上癮的經典消除玩法，與熊貓 Tan Tan 和他的好朋友一起踏上精彩的冒險旅程！'
+            />
+            <ProductBox
+              img={product44}
+              title='LINE PokoPoko 決戰波兔森林'
+              content='只需要湊齊並消除方塊就能享受有趣又刺激的益智遊戲樂趣，和兔子 POKOTA 一起來收集幸運草及櫻桃、挑戰各種關卡吧！'
+            />
+            <ProductBox
+              img={product45}
+              title='LINE Rangers'
+              content='簡單暢快正統塔防 RPG 遊戲！為了拯救被外星人軍團綁架的莎莉，和熊大、兔兔、饅頭人等 LINE 卡通明星夥伴們一起成為銀河特攻隊，並肩戰鬥吧！'
+            />
+            <ProductBox
+              img={product46}
+              title='LINE：Disney Tsum Tsum'
+              content='最可愛的迪士尼毛絨公仔消除遊戲，輕鬆串連就能贏得高分！超多超萌Tsum Tsum等你來蒐集！'
+            />
+            <ProductBox
+              img={product47}
+              title='LINE Pokopang'
+              content='透過一筆畫的方式將相同顏色的方塊連在一起即可得分，還可透過提高等級、提升攻擊力來加速得分腳步，快來和粉紅兔子POKOTA及可愛角色們合力打倒怪物吧！'
+            />
+            <ProductBox
+              img={product48}
+              title='LINE PLAY 我們的祕密世界'
+              content='【全世界玩家達7,000萬人】 在遊戲中做自己！創造出自己專屬的虛擬人偶，來跟全世界的朋友們同樂吧～'
+            />
+            <ProductBox
+              img={product49}
+              title='LINE 波兔小鎮'
+              content='只要點擊就能消除可愛造型方塊的超爽快益智遊戲！'
+            />
+            <ProductBox
+              img={product50}
+              title='LINE 動物大富豪'
+              content='撲克牌玩法再進化! 駕馭規則不受限!'
+            />
         </div>
+      </div>
       </div>
     </main>
     <footer>
