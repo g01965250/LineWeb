@@ -404,6 +404,7 @@ header{
   box-shadow: 0 20px 20px 0 rgb(0 0 0 / 10%);
   position: relative;
   height: 280px;
+  border-radius: 6px;
 }
 .product-box h3{
   margin: 0 0 8px;
@@ -418,6 +419,46 @@ header{
   color: #616161;
   line-height: 20.004px;
   margin: 0;
+}
+.product-box-hover{
+  display: none;
+  width: 270px;
+  height: 340px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.85);
+  opacity: 1;
+  border-radius: 6px;
+}
+.product-box-hover a{
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid hsla(0,0%,100%,.3);
+  border-radius: 4px;
+  line-height: 50px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.product-box-hover a:hover{
+  background-color: #07b53b;
+}
+.product-box-icon-apple{
+  font-size: 25px;
+  margin: 0px 6px -3px 20px;
+}
+.product-box-icon-google{
+  font-size: 18px;
+  margin: 0 6px -3px 20px;
+}
+.product-box:hover .product-box-hover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .ellipsish{
   position: absolute;
